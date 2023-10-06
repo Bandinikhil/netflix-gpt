@@ -1,9 +1,14 @@
+import { Provider } from 'react-redux';
 import './App.css';
+import Body from './components/Body';
+import store from './utils/appStore';
 
 function App() {
   return (
-    <div className="App">
-      <div className="text-red-600">Hii Nikhil you are a great fronyebd engineer</div>
+    <div className="App no-scrollbar">
+      <Provider store={store}>
+      <Body/>
+      </Provider>
     </div>
   );
 }
