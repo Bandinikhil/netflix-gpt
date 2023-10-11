@@ -26,7 +26,7 @@ const Login = () => {
        if(!isSignIn){
         //signUp code
         createUserWithEmailAndPassword(auth, email.current.value, password.current.value)
-  .then((userCredential) => {
+        .then((userCredential) => {
     // Signed up 
     const user = userCredential.user;
     console.log(user);
