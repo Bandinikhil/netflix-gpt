@@ -32,7 +32,7 @@ const Login = () => {
     console.log(user);
     updateProfile(auth.currentUser, {
       displayName:name.current.value , 
-      photoURL: USER_AVATAR
+      photoURL: USER_AVATAR,
     }).then(() => {
       // Profile updated!
       const {uid, email, displayName, photoURL} = auth.currentUser;

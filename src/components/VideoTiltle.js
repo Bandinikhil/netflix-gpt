@@ -9,8 +9,9 @@ const VideoTiltle = ({title, overview}) => {
         <button className='bg-white text-black p-4 px-12  md:px-12 text-xl rounded-md hover:bg-opacity-80 '> ▶️ Play </button>
         <button className='hiden md:inline-block mx-2 bg-gray-500 text-white p-4 px-12 text-xl bg-opacity-50 rounded-md '>More Info</button>
      </div>
+    
     </div>
   )
 }
 
-export default VideoTiltle
+export default VideoTiltle        
