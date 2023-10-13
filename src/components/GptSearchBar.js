@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import lang from '../utils/languageConstants'
 import openai from '../utils/openai'
@@ -6,7 +6,7 @@ import { API_OPTIONS } from '../utils/constants'
 import { addGptMovieResults } from '../utils/gptSlice'
 const GptSearchBar = () => {
     const langkey= useSelector(store => store.config.lang)
-    
+    const [openai, setOpenAi] = useState(null);
     const searchText = useRef(null)
     const dispatch = useDispatch();
     const searchMoviesTMDB = async (movie) =>{
