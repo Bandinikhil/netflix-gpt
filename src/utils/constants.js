@@ -32,5 +32,6 @@ export const BG_URL =
     {identifier : "telugu", name : "Telugu"},
   ]
 
+  export const OPENAI_KEY = "sk-a58tzHkig6M7GFNzlLnQT38lbkFJsfWKGiFB6x42YDlKIBsS";
   //export const OPENAI_KEY = "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";
-  export const OPENAI_KEY = "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";
+  //export const OPENAI_KEY = "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";

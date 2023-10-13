@@ -6,14 +6,23 @@ import GptMovieSuggestion from './GptMovieSuggestion'
 const GptSearch = () => {
   return (
     <>
-    <div className="absolute no-scrollbar">
-           <img className='h-screen w-screen -z-50 overflow-x-clip object-cover no-scrollbar' src={BG_URL} alt="logo" />
+    <div className="fixed -z-10">
+      <img className="h-screen w-screen object-cover" src={BG_URL} alt="logo" />
     </div>
-     <div>
-        <GptSearchBar/>
-        <GptMovieSuggestion/>
+    <div className="">
+      <GptSearchBar />
+      <GptMovieSuggestion/>
     </div>
-    </>
+  </>
+    // <>
+    // <div className="absolute no-scrollbar">
+    //        <img className='h-screen w-screen -z-50 overflow-x-clip object-cover no-scrollbar' src={BG_URL} alt="logo" />
+    // </div>
+    //  <div>
+    //     <GptSearchBar/>
+    //     <GptMovieSuggestion/>
+    // </div>
+    // </>
   )
 }
 
